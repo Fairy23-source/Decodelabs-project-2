@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VeloX Motors — Drive the Future</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════ -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#" class="logo">VELO<span>X</span></a>
+
+      <!-- Hamburger button (mobile) — uses Popover API, no JS needed -->
+      <button class="hamburger" popovertarget="mobile-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Desktop nav links -->
+      <ul class="nav-links">
+        <li><a href="#models">Models</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#specs">Specs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="btn btn-nav">Book a Test Drive</a>
+    </nav>
+
+    <!-- Mobile popover menu -->
+    <div id="mobile-menu" popover class="mobile-menu">
+      <button class="close-menu" popovertarget="mobile-menu" popovertargetaction="hide" aria-label="Close menu">✕</button>
+      <ul>
+        <li><a href="#models" popovertarget="mobile-menu" popovertargetaction="hide">Models</a></li>
+        <li><a href="#features" popovertarget="mobile-menu" popovertargetaction="hide">Features</a></li>
+        <li><a href="#specs" popovertarget="mobile-menu" popovertargetaction="hide">Specs</a></li>
+        <li><a href="#contact" popovertarget="mobile-menu" popovertargetaction="hide">Contact</a></li>
+        <li><a href="#contact" class="btn btn-menu" popovertarget="mobile-menu" popovertargetaction="hide">Book a Test Drive</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════
+         HERO
+    ══════════════════════════════════════════ -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Introducing 2026 Edition</p>
+        <h1 class="hero-title">Drive Beyond<br />Every Limit.</h1>
+        <p class="hero-sub">Zero to 100 in 2.9 seconds. Pure electric. Purely unstoppable.</p>
+        <div class="hero-cta">
+          <a href="#models" class="btn btn-primary">Explore Models</a>
+          <a href="#specs" class="btn btn-ghost">View Specs</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="car-silhouette">
+          <svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Car body -->
+            <ellipse cx="350" cy="230" rx="290" ry="22" fill="rgba(255,60,0,0.15)" />
+            <path d="M80,200 Q100,200 130,175 L200,130 Q250,95 350,90 Q450,95 500,130 L570,175 Q600,200 620,200 L640,200 Q660,200 660,215 L660,225 Q660,235 640,235 L620,235 Q615,250 590,255 Q565,260 540,255 Q515,250 510,235 L190,235 Q185,250 160,255 Q135,260 110,255 Q85,250 80,235 L60,235 Q40,235 40,225 L40,215 Q40,200 60,200 Z" fill="#1a1a2e" />
+            <!-- Windscreen -->
+            <path d="M200,130 L230,100 Q280,80 350,78 Q420,80 470,100 L500,130 Z" fill="#0a0a18" opacity="0.7" />
+            <!-- Window highlight -->
+            <path d="M215,128 L240,105 Q290,88 350,86 Q410,88 460,105 L485,128 Z" fill="rgba(255,255,255,0.06)" />
+            <!-- Headlight -->
+            <ellipse cx="590" cy="205" rx="22" ry="10" fill="#ff3c00" opacity="0.9" />
+            <ellipse cx="590" cy="205" rx="14" ry="6" fill="#ffaa00" />
+            <!-- Taillight -->
+            <ellipse cx="110" cy="205" rx="22" ry="10" fill="#ff3c00" opacity="0.7" />
+            <!-- Wheels -->
+            <circle cx="190" cy="240" r="42" fill="#111" />
+            <circle cx="190" cy="240" r="30" fill="#222" />
+            <circle cx="190" cy="240" r="18" fill="#ff3c00" opacity="0.8" />
+            <circle cx="190" cy="240" r="8" fill="#fff" opacity="0.3" />
+            <circle cx="510" cy="240" r="42" fill="#111" />
+            <circle cx="510" cy="240" r="30" fill="#222" />
+            <circle cx="510" cy="240" r="18" fill="#ff3c00" opacity="0.8" />
+            <circle cx="510" cy="240" r="8" fill="#fff" opacity="0.3" />
+            <!-- Speed lines -->
+            <line x1="30" y1="195" x2="5" y2="195" stroke="#ff3c00" stroke-width="2" opacity="0.5"/>
+            <line x1="25" y1="208" x2="0" y2="208" stroke="#ff3c00" stroke-width="1.5" opacity="0.35"/>
+            <line x1="20" y1="220" x2="2" y2="220" stroke="#ff3c00" stroke-width="1" opacity="0.2"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         STATS BAR
+    ══════════════════════════════════════════ -->
+    <section class="stats-bar" aria-label="Key statistics">
+      <div class="stat">
+        <span class="stat-num">2.9s</span>
+        <span class="stat-label">0–100 km/h</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">620<small>km</small></span>
+        <span class="stat-label">Range per charge</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">1,020<small>hp</small></span>
+        <span class="stat-label">Peak power</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">18 min</span>
+        <span class="stat-label">10→80% charge</span>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         MODELS
+    ══════════════════════════════════════════ -->
+    <section id="models" class="models section-pad">
+      <div class="container">
+        <div class="section-header">
+          <span class="label-tag">Our Lineup</span>
+          <h2>Choose Your Beast</h2>
+          <p>Three variants. One obsession — pure performance.</p>
+        </div>
+
+        <div class="models-grid">
+
+          <article class="model-card">
+            <div class="card-badge">Most Popular</div>
+            <div class="card-visual model-gt">
+              <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M40,120 Q60,120 80,105 L130,75 Q175,52 200,50 Q225,52 270,75 L320,105 Q340,120 360,120 L375,120 Q385,120 385,128 L385,136 Q385,142 370,143 L355,143 Q350,152 335,155 Q320,158 305,155 Q290,152 285,143 L115,143 Q110,152 95,155 Q80,158 65,155 Q50,152 45,143 L30,143 Q15,143 15,136 L15,128 Q15,120 30,120 Z" fill="#1a1a2e"/>
+                <path d="M130,75 L148,55 Q178,42 200,40 Q222,42 252,55 L270,75 Z" fill="#0d0d20" opacity="0.8"/>
+                <circle cx="105" cy="148" r="25" fill="#111"/>
+                <circle cx="105" cy="148" r="16" fill="#222"/>
+                <circle cx="105" cy="148" r="9" fill="#e63500" opacity="0.9"/>
+                <circle cx="295" cy="148" r="25" fill="#111"/>
+                <circle cx="295" cy="148" r="16" fill="#222"/>
+                <circle cx="295" cy="148" r="9" fill="#e63500" opacity="0.9"/>
+                <ellipse cx="345" cy="127" rx="15" ry="7" fill="#ff3c00" opacity="0.9"/>
+              </svg>
+            </div>
+            <div class="card-body">
+              <h3>VeloX GT</h3>
+              <p class="card-tagline">The everyday supercar</p>
+              <ul class="card-specs">
+                <li><span>0–100</span><strong>3.4s</strong></li>
+                <li><span>Range</span><strong>540 km</strong></li>
+                <li><span>Power</span><strong>680 hp</strong></li>
+              </ul>
+              <p class="card-price">From ₹89,00,000</p>
+              <a href="#contact" class="btn btn-primary btn-full">Configure</a>
+            </div>
+          </article>
+
+          <article class="model-card model-card--hero">
+            <div class="card-badge card-badge--gold">Flagship</div>
+            <div class="card-visual model-apex">
+              <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M35,115 Q55,115 75,100 L125,68 Q170,45 200,43 Q230,45 275,68 L325,100 Q345,115 365,115 L382,115 Q392,115 392,124 L392,133 Q392,139 377,140 L360,140 Q354,150 338,153 Q322,156 306,153 Q290,150 285,140 L115,140 Q110,150 94,153 Q78,156 62,153 Q46,150 40,140 L23,140 Q8,140 8,133 L8,124 Q8,115 23,115 Z" fill="#0d0d1f"/>
+                <path d="M125,68 L145,47 Q175,33 200,31 Q225,33 255,47 L275,68 Z" fill="#050510" opacity="0.9"/>
+                <circle cx="100" cy="145" r="27" fill="#0a0a0a"/>
+                <circle cx="100" cy="145" r="18" fill="#181818"/>
+                <circle cx="100" cy="145" r="10" fill="#ff3c00"/>
+                <circle cx="300" cy="145" r="27" fill="#0a0a0a"/>
+                <circle cx="300" cy="145" r="18" fill="#181818"/>
+                <circle cx="300" cy="145" r="10" fill="#ff3c00"/>
+                <ellipse cx="352" cy="122" rx="17" ry="8" fill="#ff3c00"/>
+                <ellipse cx="352" cy="122" rx="10" ry="5" fill="#ffaa00"/>
+              </svg>
+            </div>
+            <div class="card-body">
+              <h3>VeloX Apex</h3>
+              <p class="card-tagline">Engineered for obsession</p>
+              <ul class="card-specs">
+                <li><span>0–100</span><strong>2.9s</strong></li>
+                <li><span>Range</span><strong>620 km</strong></li>
+                <li><span>Power</span><strong>1,020 hp</strong></li>
+              </ul>
+              <p class="card-price">From ₹1,45,00,000</p>
+              <a href="#contact" class="btn btn-fire btn-full">Configure</a>
+            </div>
+          </article>
+
+          <article class="model-card">
+            <div class="card-badge card-badge--green">Eco</div>
+            <div class="card-visual model-air">
+              <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M45,122 Q65,122 85,108 L135,78 Q180,56 200,54 Q220,56 265,78 L315,108 Q335,122 355,122 L370,122 Q380,122 380,130 L380,138 Q380,144 365,145 L348,145 Q343,154 328,157 Q313,160 298,157 Q283,154 278,145 L122,145 Q117,154 102,157 Q87,160 72,157 Q57,154 52,145 L35,145 Q20,145 20,138 L20,130 Q20,122 35,122 Z" fill="#1a2a1a"/>
+                <path d="M135,78 L155,58 Q182,45 200,43 Q218,45 245,58 L265,78 Z" fill="#0d1a0d" opacity="0.8"/>
+                <circle cx="107" cy="150" r="25" fill="#0a120a"/>
+                <circle cx="107" cy="150" r="16" fill="#162016"/>
+                <circle cx="107" cy="150" r="9" fill="#22cc44" opacity="0.9"/>
+                <circle cx="293" cy="150" r="25" fill="#0a120a"/>
+                <circle cx="293" cy="150" r="16" fill="#162016"/>
+                <circle cx="293" cy="150" r="9" fill="#22cc44" opacity="0.9"/>
+                <ellipse cx="338" cy="129" rx="15" ry="7" fill="#22cc44" opacity="0.9"/>
+              </svg>
+            </div>
+            <div class="card-body">
+              <h3>VeloX Air</h3>
+              <p class="card-tagline">Green without compromise</p>
+              <ul class="card-specs">
+                <li><span>0–100</span><strong>4.8s</strong></li>
+                <li><span>Range</span><strong>780 km</strong></li>
+                <li><span>Power</span><strong>450 hp</strong></li>
+              </ul>
+              <p class="card-price">From ₹62,00,000</p>
+              <a href="#contact" class="btn btn-primary btn-full">Configure</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         FEATURES
+    ══════════════════════════════════════════ -->
+    <section id="features" class="features section-pad">
+      <div class="container">
+        <div class="features-layout">
+
+          <div class="features-text">
+            <span class="label-tag">Why VeloX</span>
+            <h2>Built Different.<br />Driven Different.</h2>
+            <p>Every molecule of VeloX is engineered with obsessive precision. From the carbon-fibre monocoque to the AI-assisted suspension, nothing is standard.</p>
+            <a href="#contact" class="btn btn-primary">See Full Specs</a>
+          </div>
+
+          <div class="features-cards">
+            <div class="feat-card">
+              <div class="feat-icon">⚡</div>
+              <h4>Ultra-Fast Charging</h4>
+              <p>350 kW DC charging — 10 to 80% in under 18 minutes. Never wait long at a charge point again.</p>
+            </div>
+            <div class="feat-card">
+              <div class="feat-icon">🧠</div>
+              <h4>AI Co-Pilot</h4>
+              <p>Neural-network drive assist learns your style and adapts handling, suspension, and power delivery in real-time.</p>
+            </div>
+            <div class="feat-card">
+              <div class="feat-icon">🛡️</div>
+              <h4>5-Star Safety</h4>
+              <p>360° radar, thermal imaging, and predictive emergency braking — rated safest EV of 2026.</p>
+            </div>
+            <div class="feat-card">
+              <div class="feat-icon">🌡️</div>
+              <h4>Adaptive Climate</h4>
+              <p>Cabin pre-conditioning, HEPA filtration, and zoned thermal management for every seat.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         SPECS TABLE
+    ══════════════════════════════════════════ -->
+    <section id="specs" class="specs-section section-pad">
+      <div class="container">
+        <div class="section-header">
+          <span class="label-tag">Technical</span>
+          <h2>Spec Sheet</h2>
+          <p>For those who read the fine print.</p>
+        </div>
+        <div class="specs-wrapper">
+          <table class="specs-table" aria-label="Car specifications">
+            <thead>
+              <tr>
+                <th scope="col">Specification</th>
+                <th scope="col">VeloX Air</th>
+                <th scope="col">VeloX GT</th>
+                <th scope="col">VeloX Apex</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>0–100 km/h</td><td>4.8s</td><td>3.4s</td><td>2.9s</td></tr>
+              <tr><td>Top Speed</td><td>220 km/h</td><td>270 km/h</td><td>320 km/h</td></tr>
+              <tr><td>Range</td><td>780 km</td><td>540 km</td><td>620 km</td></tr>
+              <tr><td>Battery</td><td>90 kWh</td><td>100 kWh</td><td>120 kWh</td></tr>
+              <tr><td>Peak Power</td><td>450 hp</td><td>680 hp</td><td>1,020 hp</td></tr>
+              <tr><td>Drive Type</td><td>RWD</td><td>AWD</td><td>AWD+</td></tr>
+              <tr><td>Charging (DC)</td><td>150 kW</td><td>250 kW</td><td>350 kW</td></tr>
+              <tr><td>Seats</td><td>5</td><td>4</td><td>2+2</td></tr>
+              <tr><td>Warranty</td><td>8 yr / 160k km</td><td>8 yr / 160k km</td><td>8 yr / 160k km</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         TESTIMONIALS
+    ══════════════════════════════════════════ -->
+    <section class="testimonials section-pad">
+      <div class="container">
+        <div class="section-header">
+          <span class="label-tag">What They Say</span>
+          <h2>Driven by Passion</h2>
+        </div>
+        <div class="testi-grid">
+          <blockquote class="testi-card">
+            <p>"The Apex changed what I thought was possible from an electric car. It's not just fast — it's alive."</p>
+            <footer><strong>Arjun Mehta</strong> — VeloX Apex Owner, Mumbai</footer>
+          </blockquote>
+          <blockquote class="testi-card">
+            <p>"780 km on a single charge. I drove from Delhi to Jaipur and back without touching a charger. The Air is a revolution."</p>
+            <footer><strong>Priya Nair</strong> — VeloX Air Owner, Delhi</footer>
+          </blockquote>
+          <blockquote class="testi-card">
+            <p>"The GT is the perfect daily driver. Ferocious when you want it, refined when you need it."</p>
+            <footer><strong>Rohit Sharma</strong> — VeloX GT Owner, Bangalore</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         CONTACT / CTA
+    ══════════════════════════════════════════ -->
+    <section id="contact" class="contact section-pad">
+      <div class="container">
+        <div class="contact-layout">
+
+          <div class="contact-info">
+            <span class="label-tag">Get in Touch</span>
+            <h2>Book Your Test Drive Today</h2>
+            <p>Experience VeloX first-hand. Our team will schedule a private test drive at your nearest showroom.</p>
+            <ul class="contact-details">
+              <li>📞 <a href="tel:+918001234567">+91 800 123 4567</a></li>
+              <li>✉️ <a href="mailto:hello@veloxmotors.com">hello@veloxmotors.com</a></li>
+              <li>📍 Showrooms across Mumbai, Delhi, Bangalore &amp; Pune</li>
+            </ul>
+          </div>
+
+          <div class="contact-form-wrap">
+            <div class="contact-form">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Arjun Mehta" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="arjun@example.com" />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" />
+              </div>
+              <div class="form-group">
+                <label for="model">Interested Model</label>
+                <select id="model" name="model">
+                  <option value="">Select a model…</option>
+                  <option value="air">VeloX Air</option>
+                  <option value="gt">VeloX GT</option>
+                  <option value="apex">VeloX Apex</option>
+                </select>
+              </div>
+              <button type="button" class="btn btn-fire btn-full" onclick="alert('Thank you! We will contact you soon.')">Request Test Drive</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo logo--footer">VELO<span>X</span></a>
+          <p>Redefining electric performance since 2022.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Models</h5>
+          <ul>
+            <li><a href="#models">VeloX Air</a></li>
+            <li><a href="#models">VeloX GT</a></li>
+            <li><a href="#models">VeloX Apex</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Support</h5>
+          <ul>
+            <li><a href="#">Warranty</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 VeloX Motors Pvt. Ltd. All rights reserved.</p>
+        <p>Built as a DecodeLabs Frontend Project 2 — Responsive Web Layout</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
