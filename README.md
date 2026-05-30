@@ -47,7 +47,7 @@ The project demonstrates:
 |---|---|
 | HTML5 | Structure |
 | CSS3 | Styling |
-| JavaScript | Interactivity |
+
 
 ---
 
@@ -153,7 +153,7 @@ git push origin feature-name
 
 # 👩‍💻 Author
 
-## Hetvi Patel
+## Fairy Solanki
 
 🔗 GitHub:  
 https://github.com/Fairy23-source
@@ -170,9 +170,7 @@ If you like this project:
 
 ---
 
-# 📜 License
 
-This project is licensed under the MIT License.
 
 ---
 
